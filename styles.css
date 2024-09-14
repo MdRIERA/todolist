@@ -1,0 +1,127 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Uncial Antiqua', cursive;
+    background-color: #f4ecd8; /* Color pergamino suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background: #fff8e7; /* Fondo claro imitando páginas de un libro antiguo */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    border: 12px solid #c59d5f; /* Borde dorado estilo antiguo */
+    position: relative;
+    background-image: url('https://www.transparenttextures.com/patterns/old-moon.png'); /* Textura de pergamino */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8b4513; /* Color marrón medieval */
+    font-size: 36px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #c59d5f;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #fffef5;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+button {
+    width: 25%;
+    background-color: #c59d5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Uncial Antiqua', cursive;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b4513;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 20px;
+    border: 6px solid #c59d5f; /* Borde dorado de la lista */
+    border-radius: 15px;
+    background-color: #fffef5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    padding: 15px;
+    background: #fff8e7;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+li:hover {
+    background-color: #f5e0c3;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0d9b5;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #b03060;
+    padding: 0;
+}
+
+li button:hover {
+    color: #8b0000;
+}
+
+/* Estilos especiales para las tareas completadas */
+li.done {
+    color: #aa8b66;
+    background-color: #f2e1c3;
+    text-decoration: line-through;
+}
+
